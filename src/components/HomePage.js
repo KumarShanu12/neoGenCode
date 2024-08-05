@@ -123,10 +123,7 @@ const HomePage = () => {
                     </div>
                     <p className="info-te">153 Users</p>
                   </div>
-                  {/* <div>
-                    <p>BNB Wallet</p>
-                    <p>153 Users</p>
-                  </div> */}
+                   
 
                   <div className="info-container">
                     <div className="info-class">
@@ -136,13 +133,6 @@ const HomePage = () => {
                     <p className="info-te">153 Users</p>
                   </div>
                 </div>
-                {/* <div className="list-data-sub-section"><p>BNB Wallet</p><p>153 Users</p></div>
-                        <div className="list-data-sub-section"><p>BNB Wallet</p><p>153 Users</p></div>
-                        <div className="list-data-sub-section"><p>BNB Wallet</p><p>153 Users</p></div>
-                        <div className="list-data-sub-section"><p>BNB Wallet</p><p>153 Users</p></div>
-                        <div className="list-data-sub-section"><p>BNB Wallet</p><p>153 Users</p></div>
-                        <div className="list-data-sub-section"><p>BNB Wallet</p><p>153 Users</p></div>
-                        <div className="list-data-sub-section"><p>BNB Wallet</p><p>153 Users</p></div> */}
               </div>
 
               <div className="list-data-section">
@@ -281,7 +271,15 @@ const HomePage = () => {
                   <img src={eyeLogo} /> <p>Total Value(ALZ)</p>
                 </div>
                 <div>
-                  <img className="usd-drp-down" src={usdBtn} />
+                <div class="dropdown">
+         
+        <select id="myDropdown">
+            <option value="option1">USD</option>
+            <option value="option2">IND</option>
+            <option value="option3">DH</option>
+            <option value="option4">TY</option>
+        </select>
+    </div>
                 </div>
               </div>
               <div className="amount-section">

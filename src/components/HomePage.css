@@ -157,7 +157,7 @@
                     }
 
                     .btn-grps {
-                        /* margin: auto; */
+                         
                         margin-top: 1rem;
                         display: flex;
                         justify-content: space-around;
@@ -174,7 +174,15 @@
                             width: 64px;
                             background-color: #F7F07A;
                             border-radius: 1rem;
+                            border: none;
+                            cursor: pointer;
+                            
 
+                        }
+                        button:hover{
+                                
+                            background-color: #231F20;
+                            color: white;
                         }
                     }
 
@@ -354,6 +362,11 @@
                         }
                     }
 
+                    .user-details-status button:hover{
+                        background-color: #231F20;
+                        color: white;
+                    }
+
                     .user-details-full{
                         background-color: #DBDBDB;
                         border-radius: 1rem;
@@ -523,4 +536,32 @@
 
     }
 
+}
+
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+    width: 200px; /* Adjust width as needed */
+}
+
+.dropdown::after {
+    content: '▼'; /* Arrow character */
+    position: absolute;
+    left: 84px;
+    right: 0px; /* Position from the right edge */
+    top: 50%; /* Vertically center the arrow */
+    transform: translateY(-50%); /* Adjust for vertical alignment */
+    pointer-events: none; /* Prevents interference with dropdown clicks */
+    font-size: 16px; /* Size of the arrow */
+    color: white; /* Color of the arrow */
+}
+
+select {
+    padding: 10px 30px;
+    font-size: 16px;
+    background-color: #231F20;
+    color: white;
+    border-radius: 2rem;
+     
 }
